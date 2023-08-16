@@ -1,0 +1,2 @@
+C:\Users\Windows 10\Documents\Learning\iTransition\assignments\task5\FakeUserDataGeneration\FakeUserDataGeneration\obj\Release\net6.0\browser-wasm\PubTmp\Out\libman.json
+C:\Users\Windows 10\Documents\Learning\iTransition\assignments\task5\FakeUserDataGeneration\FakeUserDataGeneration\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

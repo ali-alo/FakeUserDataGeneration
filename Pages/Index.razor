@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="row">
+    <div class="mb-4 btn-group col-md-6 col-xl-3" role="group" aria-label="Basic radio toggle button group for regions">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradioUs" autocomplete="off" @onclick="@(e => ChangeRegion("en_US"))">
+        <label class="btn btn-outline-primary pt-2 pt-md-3" for="btnradioUs">US</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradioFr" autocomplete="off" @onclick="@(e => ChangeRegion("fr"))">
+        <label class="btn btn-outline-primary pt-2 pt-md-3" for="btnradioFr">France</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradioRu" autocomplete="off" @onclick="@(e => ChangeRegion("ru"))">
+        <label class="btn btn-outline-primary pt-2 pt-md-3" for="btnradioRu">Russia</label>
+    </div>
+
+    <div class="mb-4 d-flex col-md-6  col-xl-3">
+        <div class="form-floating col-8">
+            <input type="number" class="form-control" @bind="seed" @oninput="ChangeSeed" />
+            <label class="form-label">Random seed</label>
+        </div>
+        <button type="button" class="btn btn-primary col-4" @onclick="GenerateRandomSeed">Random</button>
+    </div>
+
+    <div class="mb-4 d-flex col-md-6  col-xl-3">
+        <div class="form-floating col-8">
+            <input type="range" class="form-range form-control" min="0" max="40" step="1" id="customRange2" value="@errorSlider" @onchange="UpdateErrorNumber">
+            <label for="customRange2" class="form-label">Error</label>
+        </div>
+        <input type="number" class="form-control" @bind="errorNumber" @oninput="@UpdateErrorSlider" min="0" max="1000" step="0.25"/>
+    </div>
+    
+    <div class="mb-4 col-md-6 col-xl-3">
+        <CsvButton Users="FakeUsers"></CsvButton>
+    </div>
+</div>
+
+@if (FakeUsers.Count <= 0)
+{
+    <h3 class="text-center mt-5">Please select a region and a random seed number first</h3>
+}
+else
+{
+   <UsersTable Users="FakeUsers" TriggerCallbackToParent="FetchTenUsers"></UsersTable>
+}

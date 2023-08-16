@@ -1,0 +1,25 @@
+﻿<div class="table-responsive" id="scrollContainer" @onwheel="HandleScroll">
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Id</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Users.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Users[i].Id</td>
+                    <td>@Users[i].FullName</td>
+                    <td>@Users[i].Address</td>
+                    <td>@Users[i].Phone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
