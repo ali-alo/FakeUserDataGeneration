@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+YnD2y/IAIhBgrzjAa9sThuKkeSNzBEHv//8XI4FozY=",
+  "Hash": "9Z0nAHr7ewlu0J+5Ele94ZIpM8rk087E7jIXinDQj4I=",
   "Source": "FakeUserDataGeneration",
   "BasePath": "/",
   "Mode": "Root",
@@ -170,23 +170,6 @@
       "OriginalItemSpec": "obj\\Debug\\net6.0\\FakeUserDataGeneration.pdb"
     },
     {
-      "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "FakeUserDataGeneration",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Windows 10\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "FakeUserDataGeneration",
       "SourceType": "Computed",
@@ -236,6 +219,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Windows 10\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "FakeUserDataGeneration",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Windows 10\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -6953,6 +6953,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "FakeUserDataGeneration",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "FakeUserDataGeneration",
       "SourceType": "Discovered",
@@ -7053,23 +7070,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "FakeUserDataGeneration",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\Windows 10\\Documents\\Learning\\iTransition\\assignments\\task5\\FakeUserDataGeneration\\FakeUserDataGeneration\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

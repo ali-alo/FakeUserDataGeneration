@@ -7,7 +7,7 @@ namespace FakeUserDataGeneration.Pages
 {
     public partial class Index
     {
-        private int seedAndPage = 1;
+        private int page = 1;
         private string locale = string.Empty;
         private int? seed;
         private float errorNumber = 0.0f;
@@ -27,7 +27,7 @@ namespace FakeUserDataGeneration.Pages
             if (errorNumber != 0 && applyErrors)
                 ApplyErrorsOnNewUsers(newUsers);
             FakeUsers.AddRange(newUsers);
-            seedAndPage++;
+            page++;
             UpdateFaker();
         }
 
@@ -52,12 +52,12 @@ namespace FakeUserDataGeneration.Pages
         {
             // remove all errors first
             GetCleanData();
-            ErrorGenService.ApplyErrors(FakeUsers, errorNumber, locale, seed!.Value);
+            ErrorGenService.ApplyErrors(FakeUsers, errorNumber, locale, page);
         }
 
         private void ApplyErrorsOnNewUsers(List<FakeUser> users)
         {
-            ErrorGenService.ApplyErrors(users, errorNumber, locale, seed!.Value);
+            ErrorGenService.ApplyErrors(users, errorNumber, locale, page);
         }
 
         private void GetCleanData()
@@ -86,13 +86,13 @@ namespace FakeUserDataGeneration.Pages
         private void ResetUsersList()
         {
             FakeUsers.Clear();
-            seedAndPage = 1;
+            page = 1;
             UpdateFaker();
             FetchTenUsers();
             FetchTenUsers();
         }
 
-        private void UpdateFaker() => UsersGenService.UpdateFakerLocale(locale, seedAndPage*seed!.Value);
+        private void UpdateFaker() => UsersGenService.UpdateFakerLocale(locale, page*seed!.Value);
 
         private void UpdateErrorNumber(ChangeEventArgs e)
         {
