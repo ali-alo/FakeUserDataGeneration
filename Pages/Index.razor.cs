@@ -21,10 +21,10 @@ namespace FakeUserDataGeneration.Pages
         [Inject]
         public ErrorGenerationService ErrorGenService { get; set; }
 
-        public void  FetchTenUsers()
+        public void  FetchTenUsers(bool applyErrors = false)
         {
             var newUsers = UsersGenService.GenerateTenUsers();
-            if (errorNumber != 0)
+            if (errorNumber != 0 && applyErrors)
                 ApplyErrorsOnNewUsers(newUsers);
             FakeUsers.AddRange(newUsers);
             seedAndPage++;
@@ -66,7 +66,7 @@ namespace FakeUserDataGeneration.Pages
             ResetUsersList();
             UpdateFaker();
             for (int i = FakeUsers.Count; i < length; i += 10)
-                FetchTenUsers();
+                FetchTenUsers(true);
         }
         private void ChangeSeed(ChangeEventArgs args)
         {
@@ -111,7 +111,7 @@ namespace FakeUserDataGeneration.Pages
             if (float.TryParse((string)e.Value!, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out errorNumber))
             {
                 if (errorNumber > 1000)
-                    errorNumber = 1000;
+                    errorNumber = 0;
                 if (errorSlider != errorNumber * 4)
                     errorSlider = Math.Min((int)(errorNumber * 4), 40);
                 if (FakeUsers.Count > 0)
