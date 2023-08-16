@@ -12,9 +12,9 @@ namespace FakeUserDataGeneration.Services
         public void ApplyErrors(List<FakeUser> users, float errorAmount, string locale, int seed)
         {
             CreateFakers(locale, seed);
-            int errorsToMake = RoundNumber(errorAmount);
             foreach (var user in users)
             {
+                int errorsToMake = RoundNumber(errorAmount);
                 var errors = _faker.Generate(errorsToMake);
                 foreach (var error in errors)
                 {
@@ -33,7 +33,7 @@ namespace FakeUserDataGeneration.Services
         {
             float fraction = errorAmount % 1;
             float randomValue = _fakerErrorProbability.Generate().Probability;
-            return fraction  <= randomValue ? (int)Math.Ceiling(errorAmount) : (int)Math.Floor(errorAmount);
+            return randomValue <= fraction ? (int)Math.Ceiling(errorAmount) : (int)Math.Floor(errorAmount);
         }
 
         private void GenerateError(FakeUser user, Error error, ErrorInputs errorInputs, string property)

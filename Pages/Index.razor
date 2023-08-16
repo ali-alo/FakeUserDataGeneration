@@ -27,7 +27,10 @@
             <input type="range" class="form-range form-control" min="0" max="40" step="1" id="customRange2" value="@errorSlider" @onchange="UpdateErrorNumber">
             <label for="customRange2" class="form-label">Error</label>
         </div>
-        <input type="number" class="form-control" @bind="errorNumber" @oninput="@UpdateErrorSlider" min="0" max="1000" step="0.25"/>
+        <div class="form-floating col-4">
+            <input type="number" class="form-control" @bind="errorNumber" @oninput="@UpdateErrorSlider" min="0" max="1000" step="0.25" />
+            <label class="form-label">[0;1000]</label>
+        </div>
     </div>
     
     <div class="mb-4 col-md-6 col-xl-3">
