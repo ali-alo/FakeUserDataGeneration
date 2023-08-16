@@ -11,14 +11,14 @@ namespace FakeUserDataGeneration.Components
         public List<FakeUser> Users { get; set; }
 
         [Parameter]
-        public EventCallback<EventArgs> TriggerCallbackToParent { get; set; }
+        public EventCallback<bool> TriggerCallbackToParent { get; set; }
 
         [Inject]
         public IJSRuntime JSRuntime { get; set; }
 
 
         [JSInvokable]
-        public async Task OnScrollToBottom() => await InvokeAsync(() => TriggerCallbackToParent.InvokeAsync());
+        public async Task OnScrollToBottom() => await InvokeAsync(() => TriggerCallbackToParent.InvokeAsync(true));
 
         protected async override Task OnAfterRenderAsync(bool firstRender)
         {
