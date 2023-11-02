@@ -1,7 +1,6 @@
 # Fake User Data Generator Web Application
 
-This web application allows you to generate fake (random) user data based on a selected region. It provides various options to customize the data generation process, including specifying the number of errors per record, defining a seed value, and supporting multiple regions. For quick access go to the deployed application at https://zealous-pond-03467830f.3.azurestaticapps.net/
-
+This web application allows you to generate fake (random) user data based on a selected region. It provides various options to customize the data generation process, including specifying the number of errors per record, defining a seed value, and supporting multiple regions. For quick access, go to the deployed application at https://fake-user-data-generator-ali-alo.azurewebsites.net/
 ## Table of Contents
 
 - [Features](#features)
